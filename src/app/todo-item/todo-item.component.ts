@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import type { Todo } from '../todo';
 
@@ -9,4 +9,9 @@ import type { Todo } from '../todo';
 })
 export class TodoItemComponent {
   @Input() todo: Todo
+  @Output() toggle: EventEmitter<[ string, boolean ]> = new EventEmitter
+
+  toggleTodo() {
+    this.toggle.emit([ this.todo.id, !this.todo.done ])
+  }
 }

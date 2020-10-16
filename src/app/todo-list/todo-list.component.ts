@@ -22,6 +22,11 @@ export class TodoListComponent implements OnInit {
       .subscribe(list => this.todos = list)
   }
 
+  toggle(id: string, done: boolean): void {
+    this.todoService.complete(id, done)
+      .subscribe(list => this.todos = list)
+  }
+
   getTodos(): void {
     this.todoService.list()
       .subscribe(list => this.todos = list)
