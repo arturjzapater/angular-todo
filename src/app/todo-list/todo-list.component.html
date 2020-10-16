@@ -1,0 +1,11 @@
+<div>
+  <label>New Todo:
+    <input #name />
+  </label>
+  <button (click)="add(name.value); name.value=''">Add</button>
+</div>
+<ul>
+  <app-todo-item
+    *ngFor="let todo of todos"
+    [todo]="todo"></app-todo-item>
+</ul>
