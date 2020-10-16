@@ -8,10 +8,10 @@ import type { Todo } from '../todo';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent {
-  @Input() todo: Todo
-  @Output() toggle: EventEmitter<[ string, boolean ]> = new EventEmitter
+  @Input() todo: Todo;
+  @Output() toggle: EventEmitter<[ string, boolean ]> = new EventEmitter();
 
-  toggleTodo() {
-    this.toggle.emit([ this.todo.id, !this.todo.done ])
+  toggleTodo(): void {
+    this.toggle.emit([ this.todo.id, !this.todo.done ]);
   }
 }

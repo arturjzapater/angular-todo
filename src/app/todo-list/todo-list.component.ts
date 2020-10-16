@@ -9,26 +9,26 @@ import type { Todo } from '../todo';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-  todos: Todo[]
+  todos: Todo[];
 
   constructor(private todoService: TodoService) { }
 
   ngOnInit(): void {
-    this.getTodos()
+    this.getTodos();
   }
 
   add(name: string): void {
     this.todoService.add(name)
-      .subscribe(list => this.todos = list)
+      .subscribe(list => this.todos = list);
   }
 
   toggle(id: string, done: boolean): void {
     this.todoService.complete(id, done)
-      .subscribe(list => this.todos = list)
+      .subscribe(list => this.todos = list);
   }
 
   getTodos(): void {
     this.todoService.list()
-      .subscribe(list => this.todos = list)
+      .subscribe(list => this.todos = list);
   }
 }
