@@ -29,7 +29,7 @@ export class TodoListComponent implements OnInit {
 
   remove(id: string): void {
     this.todoService.remove(id)
-      .subscribe(list => this.todos = list)
+      .subscribe(list => this.todos = list);
   }
 
   getTodos(): void {
