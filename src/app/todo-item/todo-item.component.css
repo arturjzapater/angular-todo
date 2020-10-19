@@ -1,0 +1,6 @@
+.todo-item {
+  background-color: lightcoral;
+  padding: 15px 25px;
+  margin: 5px 10px;
+  box-shadow: 2px 2px 2px 1px rgba(15, 15, 15, 0.3);
+}

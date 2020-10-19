@@ -1,0 +1,17 @@
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.done {
+  color: hotpink;
+  order: 1;
+}

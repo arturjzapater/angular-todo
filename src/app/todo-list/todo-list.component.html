@@ -1,12 +1,15 @@
 <div>
   <label>New Todo:
-    <input #name />
+    <input #name (keyup.enter)="add(name.value); name.value=''" />
   </label>
   <button (click)="add(name.value); name.value=''">Add</button>
 </div>
-<ul>
-  <app-todo-item
+<ul class="todo-list">
+  <li 
     *ngFor="let todo of todos"
+    [ngClass]="{'done': todo.done}">
+    <app-todo-item
     (toggle)="toggle($event[0], $event[1])"
     [todo]="todo"></app-todo-item>
+  </li>
 </ul>
