@@ -6,12 +6,35 @@ ul {
   padding: 0;
 }
 
+.add-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50vw;
+  min-width: 300px;
+}
+
+.add-form__btn {
+  background-color: rgb(236, 181, 181);
+  font-weight: bold;
+  transition: 300ms;
+}
+
+.add-form__btn:hover {
+  background-color: rgb(151, 80, 80);
+  color: white;
+}
+
+.add-form__input {
+  margin: 8px 0;
+}
+
 .todo-list {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .done {
-  color: hotpink;
   order: 1;
 }

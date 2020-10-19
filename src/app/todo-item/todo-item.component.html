@@ -1,6 +1,9 @@
-<div class="todo-item" (click)="toggleTodo()">
+<div
+  class="todo-item" 
+  [ngClass]="{'done': todo.done}"
+  (click)="toggleTodo()">
   <span>
-    {{todo.name}} ({{todo.done}})
+    {{todo.name}}
   </span>
   <button
     *ngIf="todo.done" 

@@ -1,6 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-.btn {
+body {
+  background-color: antiquewhite;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+  padding: 7px 10px;
+  border: 1px #555 solid;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(236, 181, 181);
+}
+
+button {
   cursor: pointer;
-  border-radius: 2px;
-  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
 }

@@ -1,9 +1,15 @@
-<div>
-  <label>New Todo:
-    <input #name (keyup.enter)="add(name.value); name.value=''" />
-  </label>
-  <button (click)="add(name.value); name.value=''" class="btn">Add</button>
-</div>
+<form (keydown.enter)="$event.preventDefault()" class="add-form">
+  <label for="name" class="add-form__label">Add a new Todo:</label>
+  <input #name
+    id="name" 
+    (keyup.enter)="add(name.value); name.value=''"
+    class="add-form__input" />
+  <button
+    (click)="add(name.value); $event.preventDefault(); name.value=''"
+    class="btn add-form__btn">
+    Add
+  </button>
+</form>
 <ul class="todo-list">
   <li 
     *ngFor="let todo of todos"
