@@ -1,0 +1,11 @@
+header {
+  background-color: rgb(151, 80, 80);
+  color: white;
+  text-transform: uppercase;
+  padding: 4px 15px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}

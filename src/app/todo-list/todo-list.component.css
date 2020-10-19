@@ -32,7 +32,9 @@ ul {
 .todo-list {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin: 30px auto;
+  width: 60vw;
+  min-width: 350px;
 }
 
 .done {

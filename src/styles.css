@@ -2,17 +2,19 @@
 body {
   background-color: antiquewhite;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 input {
   padding: 7px 10px;
-  border: 1px #555 solid;
+  border: 1px rgb(236, 181, 181) solid;
   border-radius: 5px;
 }
 
 input:focus {
   outline: none;
-  border-color: rgb(236, 181, 181);
+  border-color: rgb(151, 80, 80);
 }
 
 button {

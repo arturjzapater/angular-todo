@@ -9,7 +9,7 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
   declarations: [
     AppComponent,
     TodoListComponent,
-    TodoItemComponent
+    TodoItemComponent,
   ],
   imports: [
     BrowserModule
