@@ -1,3 +1,10 @@
-<div (click)="toggleTodo()" class="todo-item">
-  {{todo.name}} ({{todo.done}})
+<div class="todo-item" (click)="toggleTodo()">
+  <span>
+    {{todo.name}} ({{todo.done}})
+  </span>
+  <button
+    *ngIf="todo.done" 
+    class="btn danger"
+    (click)="removeTodo()">
+    Remove</button>
 </div>

@@ -2,7 +2,7 @@
   <label>New Todo:
     <input #name (keyup.enter)="add(name.value); name.value=''" />
   </label>
-  <button (click)="add(name.value); name.value=''">Add</button>
+  <button (click)="add(name.value); name.value=''" class="btn">Add</button>
 </div>
 <ul class="todo-list">
   <li 
@@ -10,6 +10,7 @@
     [ngClass]="{'done': todo.done}">
     <app-todo-item
     (toggle)="toggle($event[0], $event[1])"
+    (remove)="remove($event)"
     [todo]="todo"></app-todo-item>
   </li>
 </ul>
